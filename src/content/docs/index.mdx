@@ -1,0 +1,37 @@
+---
+title: Doc2Pay — Документація
+description: Офіційна документація хмарної платформи Doc2Pay для бухгалтерів та ФОПів в Україні.
+template: splash
+hero:
+  tagline: Хмарна платформа для бухгалтерів та індивідуальних підприємців в Україні. AI автоматизує обробку рахунків-фактур та формує платіжні файли для банку.
+  actions:
+    - text: Початок роботи
+      link: /getting-started/introduction/
+      icon: right-arrow
+    - text: FAQ
+      link: /reference/faq/
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Розділи документації
+
+<CardGrid stagger>
+  <Card title="Компанії" icon="pencil" href="/guides/companies/">
+    Управління суб'єктами господарювання, групи компаній, налаштування ФОП та ТОВ.
+  </Card>
+  <Card title="Платежі" icon="document" href="/guides/payments/">
+    Створення платежів, експорт у банк, історія операцій та статуси.
+  </Card>
+  <Card title="Податки" icon="approve-check-circle" href="/guides/taxes/">
+    ЄСВ, ЄП, ВЗ — автоматичний розрахунок, дедлайни та нагадування.
+  </Card>
+  <Card title="Інтеграції" icon="setting" href="/integrations/privatbank/">
+    ПриватБанк API, Telegram-бот, імпорт рахунків через email.
+  </Card>
+  <Card title="Аналітика" icon="star" href="/guides/analytics/">
+    Звіти, графіки, динаміка доходів та витрат по компаніях.
+  </Card>
+</CardGrid>
