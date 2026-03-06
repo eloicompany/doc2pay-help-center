@@ -7,6 +7,10 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Doc2Pay Docs',
+			logo: {
+				src: './src/assets/doc2pay-logo.png',
+				alt: 'Doc2Pay',
+			},
 			locales: {
 				root: {
 					label: 'Українська',
@@ -14,8 +18,12 @@ export default defineConfig({
 				},
 			},
 			social: [
-				{ icon: 'github', label: 'GitHub', href: 'https://github.com/eloicompany/doc2pay' },
+				{ icon: 'email', label: 'Підтримка', href: 'mailto:support@doc2pay.com.ua' },
+				{ icon: 'telegram', label: 'Telegram', href: 'https://t.me/doc2pay_bot' },
 			],
+			components: {
+				SocialIcons: './src/components/SocialIcons.astro',
+			},
 			sidebar: [
 				{
 					label: 'Початок роботи',
